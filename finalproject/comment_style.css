@@ -1,0 +1,196 @@
+/* Wrapper */
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #01A7B7;
+    padding: 20px;
+    overflow: hidden;
+    /* 清除浮動 */
+}
+
+header h1 {
+    color: #fff;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+        /* 清除浮動 */
+}
+
+
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-links a {
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    /* 使用Roboto字体，可替换为其他喜欢的字体 */
+    font-size: 16px;
+    /* 设置字体大小 */
+    text-decoration: none;
+    /* 取消下划线 */
+    color: #ffffff;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+        /* 设置字体颜色 */
+}
+
+/* Navigation */
+nav {
+    background-color: #EEAF00;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    box-shadow: 0 2px 4px #0000004d;
+}
+
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    padding-bottom: 100px;
+    background-color: #8B7366;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A54314;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 設置LOGO樣式 */
+.logo {
+    float: left;
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border: 5px solid #ffffff;
+}
+
+
+
+.title {
+    float: left;
+    /* 左浮動 */
+    margin-left: 20px;
+    /* 增加左邊距 */
+}
+
+.title h1 {
+    margin: 0;
+    /* 清除標題預設的邊距 */
+}
+
+.comment-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #8B7366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+h2 {
+    color: #000000;
+}
+
+.ma {
+    text-align: center;
+    color: #eee;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+}

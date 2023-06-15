@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="comment_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/brave.png" alt="Logo">
+        </div>
+        <h1>大學組員圖鑑</h1>
+        <div class="header-links">
+            <a href="login.html">登入</a>
+            <a href="register.html">註冊</a>
+            <a href="brave-zone.html">勇者專區</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">主頁</a>
+                <ul>
+                    <li><a href="index.html">簡介</a></li>
+                    <li><a href="comment.html">故事投稿</a></li>
+                </ul>
+            </li>
+            <li><a href="dic.html">組員圖鑑</a>
+                <ul>
+                    <li><a href="dic.html">分類圖鑑</a></li>
+                    <li><a href="ranking.html">排行榜</a></li>
+                </ul>
+            </li>
+            <li><a href="#">組員故事櫃</a>
+                <ul>
+                    <li><a href="storypage_1.html">事件編號A</a></li>
+                    <li><a href="storypage_1.html">事件編號B</a></li>
+                    <li><a href="storypage_1.html">事件編號C</a></li>
+                    <li><a href="storypage_1.html">事件編號D</a></li>
+                    <li><a href="storypage_1.html">事件編號E</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="ma">故事投稿專區</h2>
+            <div class="comment-section">
+                <h2>投稿</h2>
+                <form action="" method="post">
+                    <label for="name">名字:</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">電子郵件:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="comment">留言:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                    <br>
+                    <input type="submit" value="送出">
+                </form>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

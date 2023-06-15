@@ -1,0 +1,349 @@
+/* Wrapper */
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #01A7B7;
+    padding: 20px;
+    overflow: hidden;
+    /* 清除浮動 */
+}
+
+header h1 {
+    color: #fff;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+        /* 清除浮動 */
+}
+
+
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-links a {
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    /* 使用Roboto字体，可替换为其他喜欢的字体 */
+    font-size: 16px;
+    /* 设置字体大小 */
+    text-decoration: none;
+    /* 取消下划线 */
+    color: #ffffff;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+        /* 设置字体颜色 */
+}
+
+/* Navigation */
+nav {
+    background-color: #EEAF00;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    box-shadow: 0 2px 4px #0000004d;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+
+
+
+/* Main content */
+main {
+    padding: 60px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+    margin-left: 120px;
+    border: 10px solid #8B7366;
+    /* 设置边框样式和颜色 */
+    border-radius: 5px;
+    background-color: #e8dcd5;
+    /* background-image: url('https://cs-b.ecimg.tw/items/DGCF45A9009UP04/000001_1551951229.jpg');
+    background-size: cover; */
+
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A54314;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 設置LOGO樣式 */
+.logo {
+    float: left;
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border: 5px solid #ffffff;
+}
+
+
+
+.title {
+    float: left;
+    /* 左浮動 */
+    margin-left: 20px;
+    /* 增加左邊距 */
+}
+
+.title h1 {
+    margin: 0;
+    /* 清除標題預設的邊距 */
+}
+
+/* 內文 */
+
+
+.name h1,
+h2 {
+    display: inline-block;
+}
+
+.name h1 {
+    color: #c460fd;
+    font-weight: bold;
+    font-size: 250%;
+    text-shadow: -3px 0 #ffffff, 0 3px #ffffff,
+        3px 0 #ffffff, 0 -3px #ffffff
+}
+
+.name h2 {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 200%;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+}
+
+/* 讓標題與文字並排 */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    width: 50%;
+    background-color: #fff;
+    border: 5px solid #8B7366;
+    /* 设置边框样式和颜色 */
+    border-radius: 10px;
+    /* 设置圆角边框 */
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    /* 可根据需要调整内边距 */
+
+}
+
+.title-section,
+.image-section {
+    flex: 1;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character-info h1,
+.character-info h2 {
+    margin: 0;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 40px;
+    /* 修改此处 */
+    display: flex;
+    justify-content: flex-start;
+    /* 修改此处 */
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.right-section {
+    width: 50%;
+    margin: 20px;
+    margin-right: 60px;
+}
+
+.right-section h4 {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 115%;
+    color: #EEAF00;
+    text-shadow: -1.5px 0 #000000, 0 1.5px #000000,
+        1.5px 0 #000000, 0 -1.5px #000000
+}
+
+.right-section p {
+    margin-top: -10px;
+    font-weight: bold;
+    text-shadow: -0.5px 0 #ffffff, 0 0.5px #ffffff,
+        0.5px 0 #EEAF00, 0 -0.5px #EEAF00
+}
+
+.right-section h3 {
+    margin-top: -10px;
+    font-size: 150%;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1.5px 0 #000000, 0 1.5px #000000,
+        1.5px 0 #000000, 0 -1.5px #000000
+}
+
+/* 故事部分 */
+.article h3 {
+    color: #ffffff;
+    font-size: 150%;
+    padding-left: 50px;
+    text-shadow: -1.5px 0 #000000, 0 1.5px #000000,
+        1.5px 0 #000000, 0 -1.5px #000000
+}
+
+
+
+.story {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.solution {
+    background-color: #EEAF00;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 50px;
+    border: 5px solid #ffffff;
+    /* 设置边框样式和颜色 */
+    border-radius: 10px;
+}
+
+.solution h3 {
+    font-weight: bold;
+    font-size: 150%;
+    color: #ffffff;
+    margin-top: -10px;
+    text-shadow: -2px 0 #000000, 0 2px #000000,
+        2px 0 #000000, 0 -2px #000000
+}
+
+.solution h5 {
+    font-size: 20px;
+    margin-top: -5px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1.5px 0 #000000, 0 1.5px #000000,
+        1.5px 0 #000000, 0 -1.5px #000000
+}
+
+.solution p {
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: -20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: -1px 0 #000000, 0 1px #000000,
+        1px 0 #000000, 0 -1px #000000
+}
+
+/* bottom */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #EEAF00;
+    border-radius: 4px;
+
+}
+
+hr {
+    border-color: #ffffff;
+    /* 设置线条颜色为 #333（深灰色） */
+    border-style: dotted;
+    border-width: 3px;
+}
